@@ -1,0 +1,11 @@
+<div *ngFor="let p of products">
+  <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">{{p.name}}</div>
+    <div class="card-body">
+      <h4 class="card-title">{{p.code}}</h4>
+      <p class="card-text">{{p.price}}</p>
+      <button type="submit" (click)="AddProduct(i)">addProduct
+      </button>
+    </div>
+  </div>
+</div>
